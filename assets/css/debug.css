@@ -1,0 +1,49 @@
+
+main {
+
+    border: darksalmon 3px solid;
+
+}
+
+nav {
+    border: aquamarine 2px solid;
+
+}
+
+nav ul {
+
+    border: blue 1px solid;
+}
+
+nav ul li {
+    border: #990000 1px solid;
+
+}
+
+body {
+
+    border: green 2px solid;
+
+}
+
+.leftcontainer {
+
+    border: violet 2px solid;
+
+}
+
+.rightcontainer {
+    border: greenyellow 2px solid;
+
+}
+
+.buttonholder {
+
+    border: #990000 1px solid;
+
+}
+
+.pholder {
+    border: goldenrod 2px solid;
+    flex-grow: 1;
+}

@@ -1,0 +1,205 @@
+@font-face {
+    font-family: "istok";
+    src: url(../fonts/istok.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "poiretone";
+    src: url(../fonts/poiretone.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "raleway";
+    src: url(../fonts/raleway.ttf) format("truetype");
+}
+
+/*defining general width and font colour*/
+main {
+    color: #6B6B6B;
+    width: 1050px;
+    margin: auto;
+
+    height: 600px;
+    padding: 50px;
+}
+
+/*navbar elements*/
+nav {
+    font-family: raleway, sans-serif;
+    font-size: 1.25rem;
+    height: 4rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+nav ul li {
+
+    display: inline-block;
+    float: left;
+    padding: 3rem 1.5rem 1.5rem 1.5rem;
+
+}
+
+a {
+    color: #6B6B6B;
+    text-decoration: none;
+}
+
+.selected {
+    color: #990000;
+}
+
+/*body elements*/
+/*body has 2 flex items: a section with text and a figure with an image*/
+body {
+
+    width: 100%;
+    height: 100%;
+}
+
+/*text area*/
+.leftcontainer {
+    width: 500px;
+    height: 600px;
+
+    display: inline-block;
+    float: left;
+}
+
+h1 {
+    font-family: poiretone, sans-serif;
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+
+}
+
+.nobottompadding {
+    padding-bottom: 0;
+}
+
+.subtitle {
+    font-family: poiretone, sans-serif;
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+p {
+    font-family: istok, sans-serif;
+    font-size: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-bottom: #6B6B6B 1px solid;
+    border-top: #6B6B6B 1px solid;
+    padding: 1rem;
+    line-height: 1.2rem;
+}
+
+button {
+    font-family: istok, sans-serif;
+    font-size: 1.2rem;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #6B6B6B;
+    color: white;
+    border: none;
+    padding: 0.3rem;
+}
+
+#tellmeajokebutton {
+    text-align: center;
+    padding: 2rem;
+}
+
+/*image area*/
+
+.rightcontainer {
+
+    width: 500px;
+    height: 600px;
+
+    float: right;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+}
+
+/* category selection */
+
+#categoryselector {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.buttonholder {
+    width: 100px;
+    height: 100px;
+
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.buttonholder button {
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+/* about screen */
+.small {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
+
+.small img {
+    height: 100%;
+    width: 100%;
+}
+
+#aboutchucknorris {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#aboutchucknorris p {
+    display: inline-block;
+
+}
+
+.pholder {
+
+    padding: 4rem 0 4rem 0;
+    display: inline-block;
+    vertical-align: center;
+    width: 100%;
+}
+
+p a {
+    color: #990000;
+}
+
+footer p {
+    border: none;
+
+
+}
+
+footer {
+    text-align: center;
+}
+
