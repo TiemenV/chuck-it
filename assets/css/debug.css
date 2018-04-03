@@ -47,3 +47,10 @@ body {
     border: goldenrod 2px solid;
     flex-grow: 1;
 }
+
+#tellmeajokebutton {
+    border: violet 1px solid;
+}
+h1 {
+    border:darkgoldenrod 1px solid;
+}
