@@ -35,7 +35,7 @@ function fillPosterArray(myJson) {
     for (let i = 0; i < myJson.cast.length; i++) {
         posterArray.push(myJson.cast[i].poster_path);
         titleArray.push(myJson.cast[i].title);
-        yearArray.push(myJson.cast[i].release_date.substring(0,4));
+        yearArray.push(myJson.cast[i].release_date.substring(0, 4));
         overviewArray.push(myJson.cast[i].overview);
     }
     displayPosters(posterArray, titleArray, yearArray, overviewArray);
@@ -53,7 +53,7 @@ function displayPosters(posterArray, titleArray, yearArray, descriptionArray) {
         let description = document.createElement("div");
         let container = document.createElement("div");
 
-        description.classList.add("leftcontainer","movie");
+        description.classList.add("leftcontainer", "movie");
 
 
         let movieTitle = document.createElement("h2");
@@ -61,7 +61,12 @@ function displayPosters(posterArray, titleArray, yearArray, descriptionArray) {
         let movieOverview = document.createElement("p");
         let title = document.createTextNode(titleArray[i]);
         let year = document.createTextNode(yearArray[i]);
-        let overview = document.createTextNode(descriptionArray[i]);
+        let overview;
+        if (descriptionArray[i] === "") {
+            overview = document.createTextNode("No movie overview available")
+        } else {
+            overview = document.createTextNode(descriptionArray[i]);
+        }
         movieTitle.appendChild(title);
         movieYear.appendChild(year);
         movieOverview.appendChild(overview);
@@ -81,13 +86,14 @@ function displayPosters(posterArray, titleArray, yearArray, descriptionArray) {
         let img = document.createElement("img");
         src = posterBaseURL + posterArray[i];
         img.setAttribute("src", src);
-        img.setAttribute("title",titleArray[i]);
-        img.setAttribute("alt",titleArray[i] + ": no image available");
+        img.setAttribute("title", titleArray[i]);
+        img.setAttribute("alt", titleArray[i] + ": no image available");
         poster.appendChild(img);
         document.querySelector("main").appendChild(poster);
         if (debug) {
             console.log("img attributes: " + img.attributes);
             console.log("movieTitle: " + titleArray[i]);
+            console.log("movieOverview: " + descriptionArray[i]);
         }
     }
 }
