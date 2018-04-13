@@ -6,9 +6,10 @@
     <title>Categories</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- <link rel="stylesheet" href="assets/css/debug.css"> -->
-</head>
 
+   <!-- <link rel="stylesheet" href="assets/css/debug.css"> -->
+</head>
+<header>
 <nav>
     <ul>
         <li><a href="index.html">Home</a></li>
@@ -17,6 +18,7 @@
         <li><a href="about.html">About</a></li>
     </ul>
 </nav>
+</header>
 <body>
 <main>
     <section class="leftcontainer">
@@ -26,41 +28,41 @@
     </section>
 
     <aside class="rightcontainer" id="categoryselector">
-        <div class="buttonholder">
+        <div class="buttonholder" id="explicit">
             <button value="explicit">Explicit</button>
         </div>
         <div class="buttonholder">
-            <button value="dev">Developer</button>
+            <button value="dev" id="dev">Developer</button>
         </div>
         <div class="buttonholder">
-            <button value="movie">Movies</button>
+            <button value="movie" id="movie">Movies</button>
         </div>
         <div class="buttonholder">
-            <button value="food">Food</button>
+            <button value="food" id="food">Food</button>
         </div>
         <div class="buttonholder">
-            <button value="celebrity">Celebrity</button>
+            <button value="celebrity" id="celebrity">Celebrity</button>
         </div>
         <div class="buttonholder">
-            <button value="science">Science</button>
+            <button value="science" id="science">Science</button>
         </div>
         <div class="buttonholder">
-            <button value="sport">Sport</button>
+            <button value="sport" id="sport">Sport</button>
         </div>
         <div class="buttonholder">
-            <button value="political">Political</button>
+            <button value="political" id="political">Political</button>
         </div>
         <div class="buttonholder">
-            <button value="religion">Religion</button>
+            <button value="religion" id="religion">Religion</button>
         </div>
         <div class="buttonholder">
-            <button value="animal">Animals</button>
+            <button value="animal" id="animal">Animals</button>
         </div>
         <div class="buttonholder">
-            <button value="history">History</button>
+            <button value="history" id="history">History</button>
         </div>
         <div class="buttonholder">
-            <button value="music">Music</button>
+            <button value="music" id="music">Music</button>
         </div>
         <div class="buttonholder">
             <button value="travel">Travel</button>
@@ -77,4 +79,5 @@
     </aside>
 </main>
 </body>
+<script src="assets/js/categories.js"></script>
 </html>

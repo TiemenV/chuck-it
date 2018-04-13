@@ -4,5 +4,14 @@ Website assignment for College class Analysis and Modelling Techniques. Website 
 
 ## TODO
 
-* split up css file to one general stylesheet and seperate sheets for page-unique entries
-* create static containers for the movie page
+* implement responsive design with a seperate mobile website via media queries
+* documentation
+* testing
+
+## Nice to have
+
+* Style category buttons with a background image
+* Get a random CN fact in the about page
+* Get categories from API dynamically
+* Material design for mobile
+* Sorting movies by name or date
